@@ -20,6 +20,7 @@ html{
     --bg-task-color:rgb(89, 88, 88);
     --primary-text-color:white;
     --bg-delete-color:red;
+    --bg-edit-color:rgb(0, 38, 255);
 
     /* padding variables */
     --nav-padding:15px 30px;
@@ -111,6 +112,14 @@ section .task-column .task{
     cursor:grab;
 }
 
+section .task .all-btn{
+   
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: var(--padding-s);
+} 
+
 section .task-column .task button{
     align-self: flex-end;
     cursor: pointer;
@@ -119,6 +128,17 @@ section .task-column .task button{
     border:none;
     outline:none;
     background-color: var(--bg-delete-color);
+    color: var(--primary-text-color);
+}
+
+section .task-column .task .edit-btn{
+    align-self: flex-end;
+    cursor: pointer;
+    padding: var(--padding-s) var(--padding-m);
+    border-radius: var(--border-radius-s);
+    border:none;
+    outline:none;
+    background-color: var(--bg-edit-color);
     color: var(--primary-text-color);
 }
 
