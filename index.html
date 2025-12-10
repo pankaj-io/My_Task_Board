@@ -18,11 +18,11 @@
                         <div class="left">To do</div>
                         <div class="right">Count</div>
                     </div>
-                    <div draggable="true" class="task">
-                        <h2>Task 1</h2>
+                    <!-- <div draggable="true" class="task">
+                        <-- <h2>Task 1</h2>
                         <p>Desription task</p>
-                        <button>Delete</button>
-                    </div>
+                        <button>Delete</button> --
+                    </div> -->
                 </div>
                 <div id="progress" class="task-column">
                     <div class="heading ">
@@ -40,19 +40,26 @@
             </section>
     </main>
 
-    <div class="modal add-new-task">
+    <div class="modal">
         <div class="bg"></div>
         <div class="center">
             <input 
                 type="text" 
+                id="task-title"
                 placeholder="Task title"
             />
-            <textarea placeholder="Task Description" rows="8"></textarea>
+            <textarea 
+                id="task-desc"
+                placeholder="Task Description" 
+                rows="8"
+                ></textarea>
             <button 
                 id="add-new-task" 
                 class="add-task-btn"
             >Add Task</button>
+          
         </div>
+        
     </div>
 
 <script src="script.js"></script>
